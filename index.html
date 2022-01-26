@@ -12,37 +12,105 @@
     <link rel="stylesheet" href="./assets/css/common.css" />
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./style.css">
     <!-- mapbox -->
-    <style>
-        div.row{
-            background-color: black;
-        }
-        div.row div{
-            background-color: #ffbf00;
-        }
-
-    </style>
     
     <title>Bootstrap</title>
 </head>
 
 <body>
-    <div class="container-lg">
-        <div class="row ">
-            <div class="col-sm-5 col-md-4 col-lg-3 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-7 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-3 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-9 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-9 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-3 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-4 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-8 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-10 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-2 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-11 border border-4 border-danger">one of three columns</div>
-            <div class="col-sm-1 border border-4 border-danger">one of three columns</div>
+    <div class="navbar navbar-expand-lg navbar-dark text-white bg-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">DART</a>
+        <button data-bs-toggle='collapse' data-bs-target="#navItem" class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-white" id="navItem">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Buy</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sell</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Discover</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
+      <!-- jumbotron -->
+    <section class="bg-white text-dark p-5 mt-5 mt-md-0 text-center text-sm-start">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div>
+            <h1>Find art you <span class="text-danger">Love ❤</span></h1>
+            <p class="lead my-4">
+              At Dart , we make it our mission to help you discover and buy from the best emerging artists around the world. Dart is your portal to thousands of original works by today’s top artists.            </p>
+            <button data-bs-toggle="modal" data-bs-target="#enquire" class="btn btn-lg btn-primary">Enquiry now</button>
+          </div>
+        <img class="w-50 d-none d-sm-block" src="https://images.unsplash.com/photo-1604077198996-4eb67c32f6a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- modal -->
+    <div class="modal fade" id="enquire">
+      <div class="modal-dialog">
+        <div class="modal-content m-2">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- signup to newsletter -->
+    <section class="bg-dark text-white p-4 justify-content-between">
+      <div class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <h3>Sign Up For Our Newsletter</h3>
+          <div class="input-group">
+            <input class="form-control" type="text">
+            <button class="btn btn-lg btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- carousal -->
+    <div class="m-5 text-center container carousal ">
+      <div class="row">
+        <h3>Featured Art</h3>
+      </div>
+      <!-- <img src="https://thumbs.dreamstime.com/z/old-vector-square-retro-ancient-drawing-pop-art-color-rhombuses-31508182.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="col carousel-item active">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAyVBMVEXfAwMAAAD/9wEFMdL/////+wEAAAPKyAGlpgAFMtXvBATlBAJOTk7jAwWXAQGnp6fe3t5BQUEFLMAHNd8CCi3//wLDvQTExMRpAQQGIZEEJqWcAwC1AgMGKLQFKKtQTwGamQRmZmb/+Uz/+1/8+Br+9z/S0tL7+Cn8+VT+90L59yv7+SH++mX5/FiBgYEABAA+AQmABwNlZQM1NwmAhQU9QATEAgWenp4FKJ8tLS2zs7MBCyZdXV29vb0JHYCRkZF4ewUJHXaamAZ/o+ItAAAD9ElEQVR4nO3dCVubMAAGYMmEdnO16ta5rZ45VgJUd7hN6zy2//+jlgB11nkUkpYEv+9Ra4Hm4W2AACV0JWh7VpqegYUHQv8Dof9xXNhXOVKPx5+HlfMlyotwXLiqsq3/eb/Wq5qd47wIf4QrFdPb8a0ODYVfu67lW2RX2B2EbmWwb1sYErcy2Le8lEK49EAIIYTNB0IIIWw+EEIIYfOBEEIImw+EEELYfCCEEMLmAyGEEDYfCCH04TNgy8KTjmv5bvlT7qh45lAiy0JXAyGEwTMSDteayjCfj83Vh2NHuN6rWoClrK1DCOFDgXBZmVtYeQa9E7a/Dl9Vzg+/hDVSHky0WBhA6IzwovXCjZ/9WjnyRlg3n1ov3IYQQgghhBBCCCGEEEIIIYRwjjh7fLix+dpONp0VBnYDIYQLElq5+MXVs/pFHZ5uGefU6ToMdl8aZ8914QvDQAghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQ1hKeTabXn0+u2in8LxBCCCGEEEIIIYQQQgghhBBCqLP1xjhbbgvP3xrn3G2hvUAIIYS2hL82Kmfil/BwtXLc6ve0CKFbfdcghBBCCCGE8JH0liUcVr8toaUMlyTUdwhvJnN2FzUXNnZP9jnvBm+8X+p8zkz747c4z0Z4WO/mi/PksFHfjbBffUWeN/1mgVPhpPXCurmwJHxn/1tgBh0r342wbUto/5t8wk4AIYR+CS93K+fSL+GH6rcO+eibsPJnrBBCCCGEEEIIIYQQQgghhBBCCGGLhP2nL6C78ltoKxBCCKGB0NIVDi4L7Vxt4q4w6g4M03W8DqMDw1kL3RcODOfDfWH76xDCp+YDwvol+yxMEpI8PgUXXgu5TIl8fJIk81o4EpxwBSWcF2WUj+p5mA9PiWDcZ6GgglBCYiqEUE8TKiTVvjhjlAmSScZZnPksVCuZFjJVX6o2R0k5KB5zroUsJr7XYSlUP1pI84wJz/Symimh0EKv18M7wrKg9gpH+bp4eyltm1BveCTVry+3NEy1JNJvYdFUEH5Txt3WIp/Ea+H94XS25HYIw9uvm93P8VooaEKJ+hUDKdWejaQjtW7KlOrWX/JyvM9CGYs4Uw17ksVJLMhYJCzV25eMJExIWY73Wah2ZjjTf6UgieSMiphyphpEPSycjvdZGCf62EE51P6pULaUjLji8SxUNaq2q8V4V85E1TmbmGZszEhWCpWGMZILScqY2qkpxtsTGnWKUMI6Z4TVYjht+bhuD8NpA1k2jfy+9rDeVdDRdccwJ4Ww3hulm4uQzA7616NkRvh7r3IuA4v5Y/pG3ZMDK31mbGURXVgjp4QLDIT+B0L/8xdL6Ar7geZYdQAAAABJRU5ErkJggg==" class="d-block w-100" alt="...">
+          </div>
+          <div class="col carousel-item">
+            <img src="https://m.media-amazon.com/images/I/61bc8Wp8yEL._SL1027_.jpg" class="d-block w-100" alt="...">
+          </div> -->
+    </div>
+    <!-- Another compartment -->
+    <section class="bg-dark text-white p-5 justify-content-between">
+      <div class="d-flex align-items-center justify-content-between">
+        <p class="lead my-4">
+          At Dart , we make it our mission to help you discover and buy from the best emerging artists around the world. Dart is your portal to thousands of original works by today’s top artists.            </p>
+        <img class="w-50 d-none d-sm-block" src="https://images.unsplash.com/photo-1627843240167-b1f9d28f732e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2232&q=80" alt="">
+      </div>
+    </section>
 </body>
 
 </html>
