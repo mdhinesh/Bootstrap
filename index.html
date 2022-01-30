@@ -26,7 +26,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-white" id="navItem">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="#" class="nav-link">Buy</a>
             </li>
@@ -48,42 +48,58 @@
             <h1>Find art you <span class="text-danger">Love ❤</span></h1>
             <p class="lead my-4">
               At Dart , we make it our mission to help you discover and buy from the best emerging artists around the world. Dart is your portal to thousands of original works by today’s top artists.            </p>
-            <button data-bs-toggle="modal" data-bs-target="#enquire" class="btn btn-lg btn-primary">Enquiry now</button>
+               <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enquire now
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you</p>
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         <img class="w-50 d-none d-sm-block" src="https://images.unsplash.com/photo-1604077198996-4eb67c32f6a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
         </div>
       </div>
     </section>
-    <!-- modal -->
-    <div class="modal fade" id="enquire">
-      <div class="modal-dialog">
-        <div class="modal-content m-2">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- signup to newsletter -->
-    <section class="bg-dark text-white p-4 justify-content-between">
-      <div class="container">
+   
+     <!-- signup to newsletter -->
+     <section class="bg-dark text-white p-4 justify-content-between">
+      <div class="container p-5">
         <div class="d-md-flex align-items-center justify-content-between">
           <h3>Sign Up For Our Newsletter</h3>
           <div class="input-group">
-            <input class="form-control" type="text">
+            <input class="form-control" placeholder="Enter Email" type="text">
             <button class="btn btn-lg btn-primary">Submit</button>
           </div>
         </div>
@@ -103,14 +119,176 @@
             <img src="https://m.media-amazon.com/images/I/61bc8Wp8yEL._SL1027_.jpg" class="d-block w-100" alt="...">
           </div> -->
     </div>
-    <!-- Another compartment -->
-    <section class="bg-dark text-white p-5 justify-content-between">
-      <div class="d-flex align-items-center justify-content-between">
-        <p class="lead my-4">
-          At Dart , we make it our mission to help you discover and buy from the best emerging artists around the world. Dart is your portal to thousands of original works by today’s top artists.            </p>
-        <img class="w-50 d-none d-sm-block" src="https://images.unsplash.com/photo-1627843240167-b1f9d28f732e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2232&q=80" alt="">
+    <!-- learn section -->
+    <section id="learn" class="bg-dark text-white p-0 p-md-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h3>Buy paintings</h3>
+          <p class="lead">
+            At Dart , we make it our mission to help you discover and buy from the best emerging artists around the world. Dart is your portal to thousands of original works by today’s top artists.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dignissimos? Assumenda ullam eius veniam esse corporis voluptates, blanditiis neque saepe commodi. Voluptates ex impedit nihil!
+          </p>
+          <a href="#" class="btn btn-primary btn-lg">
+            <i class="bi bi-chevron-right"></i>
+            Read more
+          </a>
+          </div>
+          <div class="col-md">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1627843240167-b1f9d28f732e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2232&q=80" alt="">
+          </div>
+        </div>
       </div>
     </section>
+    <!-- Question accordian -->
+    <section class="question">
+      <div class="container p-5 align-items-center">
+        <h2 class="text-center md-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                How do you ship?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Where are you located?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What happens if i don't receive my piece?  
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- instructors -->
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container">
+          <h2 class="text-center text-white">Our Curators</h2>
+          <p class="lead text-center text-white mb-5">
+              Our curators curate the best pieces from around the world to be delivered at your doorstep
+          </p>
+          <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="" />
+                          <h3 class="card-title mb-3">John</h3>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                          </p>
+                          <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="" />
+                          <h3 class="card-title mb-3">Jane</h3>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                          </p>
+                          <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/men/10.jpg" class="rounded-circle mb-3" alt="" />
+                          <h3 class="card-title mb-3">Steve</h3>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                          </p>
+                          <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                      <div class="card-body text-center">
+                          <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="" />
+                          <h3 class="card-title mb-3">Sarah</h3>
+                          <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                          </p>
+                          <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                          <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- Contact & Map -->
+    <section class="p-5 my-0 my-md-5">
+      <div class="container">
+          <div class="row g-4">
+              <div class="col-md">
+                  <h2 class="text-center mb-4">Contact Info</h2>
+                  <ul class="list-group list-group-flush lead">
+                      <li class="list-group-item">
+                          <span class="fw-bold">Head Office:</span> 24A CyberHub
+                      </li>
+                      <li class="list-group-item">
+                          <span class="fw-bold">Contact Number:</span> 011-123-456
+                      </li>
+                      <li class="list-group-item">
+                          <span class="fw-bold">Enrollment Email:</span> support@dart.test
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md">
+                  <div id="map"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+          <p class="lead">Copyright &copy; 2021 Dart</p>
+
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+              <i class="bi bi-arrow-up-circle h1"></i>
+          </a>
+      </div>
+  </footer>
 </body>
 
 </html>
